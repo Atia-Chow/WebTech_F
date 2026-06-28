@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///C:/xampp/htdocs/WebTech/registration.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blood Donation Program</title>
+    <link rel="stylesheet" href="external.css">
+<style>
+    body {
+        font-family: Raleway, sans-serif;
+        background-color:#cfddfe;
+    }
+
+    h1 {
+        text-align: center;
+        color: #1e3a8a;
+    }
+
+    h2 {
+        text-align: center;
+        color: #171718;
+    }
+
+    form {
+            width: 800px;
+            margin: auto;
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: white;
+            border: 1px solid gray;
+            border-radius: 10px;
+            box-shadow:0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            margin-bottom: 4px;
+            border: 1px solid #525253; /* Clean grey border */
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+</style> 
+    </head>
+
+<body>
+    <h1 style="text-decoration: underline;">
+        Life Saver Blood Donation Program
+    </h1>
+
+    <label>This is a system of collecting donor information and emergency blood request information. It will collect blood doner Information as well as Blood request information.Please fill the forms accordingly</label><br>
+
+    <form action="file:///C:/xampp/htdocs/WebTech/registration.html#" method="post">
+        <fieldset>
+        <legend>Blood Donor Registration</legend>
+ 
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required=""><br><br>
+
+    <label for="age">Age</label><br>
+    <input type="number" id="age" name="age" required=""><br><br>
+ 
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required=""><br><br>
+ 
+    <label for="phone">Phone number:</label><br>
+    <input type="number" id="phone" name="phone" required=""><br><br>
+ 
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="4" column="20" required=""></textarea><br><br>
+ 
+    <label for="blood_group">Blood Group</label><br>
+    <select>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+ 
+    </select><br><br>
+
+    <label for="last_donation_date">Last Donation Date:</label><br>
+    <input type="date" id="last_donation_date" name="last_donation_date" required=""><br><br>
+
+    <label for="health_condition">Health Condition</label><br>
+    <textarea id="health_condition" name="health_condition" rows="3" column="20" required=""></textarea><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Blood Request Form</legend>
+        
+    <label for="patientname">Patient Name:</label><br>
+    <input type="text" id="patientname" name="patientname" required=""><br><br>
+
+    <label for="blood_group">Blood Group</label><br>
+    <select>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+ 
+    </select><br><br>
+
+    <label for="required_date">Required Date:</label><br>
+    <input type="date" id="required_date" name="required_date" required=""><br><br>
+
+    <label for="hospital_name">Hospital Name:</label><br>
+    <input type="text" id="hospital_name" name="hospital_name" required=""><br><br>
+ 
+    <label for="phone">Emergency Contact number:</label><br>
+    <input type="number" id="phone" name="phone" required=""><br><br>
+ 
+    <label for="messege">Additional Message:</label><br>
+    <textarea id="messege" name="messege" rows="3" column="20" required=""></textarea><br><br>
+
+    <label for="patient_condition">Health Condition</label><br>
+    <textarea id="patient_condition" name="patient_condition" rows="3" cols="20" required></textarea><br><br>
+
+    <section class="donor-summary">
+    <h3>Available Blood Groups & Registered Donors</h3>
+    <table>
+        <thead>
+          <section class="donor-summary">
+    <table class="split-table">
+        <thead>
+            <tr>
+                <th>Blood Group</th>
+                <th>Registered Donors</th>
+                <th>Patient Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>A+</strong></td>
+                <td>24</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td><strong>A-</strong></td>
+                <td>5</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td><strong>B+</strong></td>
+                <td>32</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td><strong>B-</strong></td>
+                <td>3</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td><strong>AB+</strong></td>
+                <td>12</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td><strong>AB-</strong></td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><strong>O+</strong></td>
+                <td>45</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td><strong>O-</strong></td>
+                <td>8</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<style>
+    .donor-summary {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .donor-summary h3 {
+        color: #1e3a8a;
+        margin-bottom: 10px;
+    }
+
+    .split-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .split-table, 
+    .split-table th, 
+    .split-table td {
+        border: 1px solid #525253;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .split-table th {
+        background-color: #f1f5f9;
+    }
+</style>
+
+
+_
+    <input type="submit" value="Submit" style="background-color: green; color: white;">
+    <input type="reset" value="Reset" style="background-color: green; color: white;">
+    </fieldset>
+
+</form></body></html>
